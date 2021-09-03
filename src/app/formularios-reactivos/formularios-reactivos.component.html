@@ -1,0 +1,11 @@
+<div>
+  <form [formGroup]="myForm" (submit) ="verResultados()">
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input formControlName = "formNombre" id="nombre" class="form-control">
+      <div>
+        <button class="button">ENVIAR</button>
+      </div>
+    </div>
+  </form>
+</div>

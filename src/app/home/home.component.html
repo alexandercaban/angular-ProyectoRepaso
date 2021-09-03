@@ -1,0 +1,4 @@
+<div class = "grid" *ngFor="let item of arrayFotos">
+   <img [src] ="item.thumbnailUrl" alt="" [routerLink] = "['/', 'detalles', item.id]">
+</div>
+

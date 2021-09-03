@@ -1,0 +1,19 @@
+<div>
+  <form [formGroup] = "form" (submit) = logueo()>
+    <div class="form-group">
+      <div>
+        <label for="login">Login</label>
+        <input formControlName = "login" id = "login" class="form-control">
+      </div>
+      
+      <div>
+        <label for="password">Password</label>
+        <input formControlName = "password"  type="password" id = "password" class="form-control">
+      </div>
+
+      <div>
+          <button [disabled] = !form.valid class="button">INGRESAR</button>
+      </div>
+    </div>
+  </form>
+</div>

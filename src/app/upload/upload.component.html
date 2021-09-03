@@ -1,0 +1,7 @@
+<div>
+  <input type="file" (change)="capturarFile($event)">
+</div>
+
+<div *ngIf="previsualizacion">
+  <img width="200px" [src] = "previsualizacion" alt="">
+</div>
